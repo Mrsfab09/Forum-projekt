@@ -7,7 +7,6 @@
     <title>Forum Informatyka na wypasie</title>
 </head>
 <body>
-    <header></header>
     <!--
         Plan szkieletu HTML i CSS 
         1. Logo w Gimp
