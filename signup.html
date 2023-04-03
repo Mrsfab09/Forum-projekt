@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarejestruj się</title>
+    <!--CSS-->
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/form-login.css">
+    <!--inne linki-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <ul class="navbar">
+            <li><a href="index.php" class="active"><i class="ri-home-2-fill"></i> Strona główna</a></li>
+            <li><a href="#"><i class="ri-questionnaire-fill"></i> Zadaj pytanie</a></li>
+            <li><a href="#"><i class="ri-phone-fill"></i> Kontakt</a></li>
+            <li><a href="#">O forum</a></li>
+        </ul>
+        <div class="main">
+        <a href="signin.html" class="user"><i class="ri-user-fill"></i>Zaloguj się</a>
+        <a href="signup.html" class="user">Zarejestruj się</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <!--Formularz-->
+    <div class="container">
+        <form method="post">
+            <div class="form signup">
+                <h2>Zarejestruj się</h2>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Nazwa użytkownika</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Adres email</span>
+                </div>
+                <div class="inputBox">
+                    <input type="password" required="required">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Utwórz hasło</span>
+                </div>
+                <div class="inputBox">
+                    <input type="password" required="required">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Powtórz hasło</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Utwórz konto">
+                </div>
+                <p>Masz juz konto? <a href="#" class="login">Zaloguj się</a></p>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

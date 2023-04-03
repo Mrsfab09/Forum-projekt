@@ -9,14 +9,16 @@
     list-style: none;
 }
 :root{
-    --bgcolor:#223243; 
+    --bgcolor:#222327;
     --text-color:#fff;
     --main-color:#2e96db;
 }
 body{
-    min-height: 100vh;
-    background: var(--bgcolor);
-    color: var(--text-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #223243; 
 }
 header{
     position: fixed;
