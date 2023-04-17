@@ -19,7 +19,7 @@
     <?php include_once("header.php")?>
     <!-- Login -->
     <?php include_once("form_login.php")?>
-
-    <script src="js/form.js"></script>
+    <!-- Footer -->
+    <?php include_once("footer.php")?>
   </body>
 </html>

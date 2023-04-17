@@ -1,5 +1,5 @@
-/* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +18,7 @@ a {
   width: 100%;
   z-index: 100;
   padding: 0 20px;
+  margin-bottom: 100px;
 }
 .nav {
   max-width: 1100px;
@@ -53,6 +54,7 @@ a {
   background: transparent;
   border-radius: 6px;
   cursor: pointer;
+  color: white;
 }
 .button:active {
   transform: scale(0.98);
@@ -115,50 +117,44 @@ a {
   position: absolute;
   top: 10px;
   right: 20px;
-  color: #0b0217;
   font-size: 22px;
   opacity: 0.7;
   cursor: pointer;
+  color: white;
 }
 .form_container h2 {
   font-size: 22px;
   color: #fff;
   text-align: center;
 }
-input[type='text'],
-input[type='email'],
-input[type='password']{
+.dane{
   background-color: #223243;
 }
-::placeholder{
+.dane::placeholder{
   color: white;
 }
+
 /* Style validation */
 .form-control.success input {
 	border-color: #2ecc71;
 }
-
 .form-control.error input {
 	border-color: #e74c3c;
 }
-
 .form-control .user{
 	visibility: hidden;
 	position: absolute;
 	top: 40px;
 	right: 10px;
 }
-
 .form-control.success i.ri-checkbox-circle-fill {
 	color: #2ecc71;
 	visibility: visible;
 }
-
 .form-control.error i.ri-error-warning-fill {
 	color: #e74c3c;
 	visibility: visible;
 }
-
 .form-control small {
 	color: #e74c3c;
 	position: absolute;
@@ -166,10 +162,10 @@ input[type='password']{
 	left: 0;
 	visibility: hidden;
 }
-
 .form-control.error small {
 	visibility: visible;
 }
+
 .input_box {
   position: relative;
   margin-top: 30px;
@@ -182,7 +178,6 @@ input[type='password']{
   border: none;
   outline: none;
   padding: 0 30px;
-  color: #333;
   transition: all 0.2s ease;
   border-bottom: 1.5px solid #fff;
   color: white;

@@ -89,6 +89,7 @@
             </div>
         </div>
     </div>
+    <?php include_once("footer.php")?>
     <script>
         const tabs=document.querySelectorAll('.tab_btn');
         const all_content=document.querySelectorAll('.content');

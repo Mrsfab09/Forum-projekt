@@ -1,0 +1,54 @@
+.form_question{
+    width: 1100px;
+    height: 630px;
+    background: #112f40;
+    padding: 30px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.topic{
+    background: #121a26dc;
+    width: 1000px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    font-family: 'Alkatra', cursive;
+    font-size: 20px;
+    padding: 5px 12px;
+    color: white;   
+}
+.topic:hover{
+    text-decoration: none;
+    font-size: 20px;
+}
+.topic::placeholder{
+    font-size: 20px;
+    color: #929292;
+}
+.textarea{
+    background: #121a26dc;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 400px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.submit-quest{
+    padding: 6px 24px;
+    border: 2px solid #2e96db;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    float: right;
+}
+.submit-quest:hover{
+    background-color: #2e96db;
+}

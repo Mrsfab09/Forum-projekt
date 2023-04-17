@@ -23,11 +23,11 @@
             <h2>Zaloguj</h2>
 
             <div class="input_box">
-              <input type="email" placeholder="Email" required />
+              <input class="dane" type="email" placeholder="Email" required />
               <i class="uil uil-envelope-alt email"></i>
             </div>
             <div class="input_box">
-              <input type="password" placeholder="Hasło" required />
+              <input class="dane" type="password" placeholder="Hasło" required />
               <i class="uil uil-lock password"></i>
               <i class="uil uil-eye-slash pw_hide"></i>
             </div>
@@ -48,11 +48,11 @@
 
         <!-- Signup From -->
         <div class="form signup_form">
-          <form action="#" class="form" id="form">
+          <form action="db_connect.php" class="form" id="form">
             <h2>Zarejestruj się</h2>
-          <div class="form-control">
+            <div class="form-control">
               <div class="input_box">
-                <input type="text" id="username" placeholder="Nazwa użytkownika" required />
+                <input class="dane" type="text" id="name" placeholder="Imię" required />
                 <i class="ri-user-line user"></i>
                 <i class="ri-checkbox-circle-fill"></i>
                 <i class="ri-error-warning-fill"></i>
@@ -61,33 +61,51 @@
             </div>
             <div class="form-control">
               <div class="input_box">
-                <input type="email" id="email" placeholder="Email" required />
-                <i class="uil uil-envelope-alt email"></i>
+                <input class="dane" type="text" id="last-name" placeholder="Nazwisko" required />
+                <i class="ri-user-line user"></i>
                 <i class="ri-checkbox-circle-fill"></i>
                 <i class="ri-error-warning-fill"></i>
                 <small>Error message</small>
               </div>
             </div>
             <div class="form-control">
-              <div class="input_box">
-                <input type="password" id="password" placeholder="Hasło" required />
-                <i class="uil uil-lock password"></i>
-                <i class="uil uil-eye-slash pw_hide"></i>
-                <i class="ri-checkbox-circle-fill"></i>
-                <i class="ri-error-warning-fill"></i>
-                <small>Error message</small>
+                <div class="input_box">
+                  <input class="dane" type="text" id="username" placeholder="Nazwa użytkownika" required />
+                  <i class="ri-user-line user"></i>
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <i class="ri-error-warning-fill"></i>
+                  <small>Error message</small>
+                </div>
               </div>
-            </div>
-            <div class="form-control">
-              <div class="input_box">
-                <input type="password" id="password2" placeholder="Powtórz hasło" required />
-                <i class="uil uil-lock password"></i>
-                <i class="uil uil-eye-slash pw_hide"></i>
-                <i class="ri-checkbox-circle-fill"></i>
-                <i class="ri-error-warning-fill"></i>
-                <small>Error message</small>
+              <div class="form-control">
+                <div class="input_box">
+                  <input class="dane" type="email" id="email" placeholder="Email" required />
+                  <i class="uil uil-envelope-alt email"></i>
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <i class="ri-error-warning-fill"></i>
+                  <small>Error message</small>
+                </div>
               </div>
-            </div>
+              <div class="form-control">
+                <div class="input_box">
+                  <input class="dane" type="password" id="password" placeholder="Hasło" required />
+                  <i class="uil uil-lock password"></i>
+                  <i class="uil uil-eye-slash pw_hide"></i>
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <i class="ri-error-warning-fill"></i>
+                  <small>Error message</small>
+                </div>
+              </div>
+              <div class="form-control">
+                <div class="input_box">
+                  <input class="dane" type="password" id="password2" placeholder="Powtórz hasło" required />
+                  <i class="uil uil-lock password"></i>
+                  <i class="uil uil-eye-slash pw_hide"></i>
+                  <i class="ri-checkbox-circle-fill"></i>
+                  <i class="ri-error-warning-fill"></i>
+                  <small>Error message</small>
+                </div>
+              </div>
 
             <button type="submit" class="button">Załóż konto</button>
 

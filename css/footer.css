@@ -1,0 +1,24 @@
+footer{
+    background-color: #112f40;
+    color: aliceblue;
+    position: fixed;
+    bottom: 0;
+    width: 1100px;
+    height: 50px;
+    text-align: center;
+    padding: 2px 0 2px 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 550px;
+    margin-right: 500px;
+}
+.ri-github-fill{
+    font-size: 30px;
+}
+.profile{
+    text-decoration: none;
+    color: white;
+    gap: 10px;
+}
