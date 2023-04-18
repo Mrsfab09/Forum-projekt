@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_validation.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
@@ -48,26 +49,8 @@
 
         <!-- Signup From -->
         <div class="form signup_form">
-          <form action="db_connect.php" class="form" id="form">
+          <form action="" class="form" id="form">
             <h2>Zarejestruj się</h2>
-            <div class="form-control">
-              <div class="input_box">
-                <input class="dane" type="text" id="name" placeholder="Imię" required />
-                <i class="ri-user-line user"></i>
-                <i class="ri-checkbox-circle-fill"></i>
-                <i class="ri-error-warning-fill"></i>
-                <small>Error message</small>
-              </div>
-            </div>
-            <div class="form-control">
-              <div class="input_box">
-                <input class="dane" type="text" id="last-name" placeholder="Nazwisko" required />
-                <i class="ri-user-line user"></i>
-                <i class="ri-checkbox-circle-fill"></i>
-                <i class="ri-error-warning-fill"></i>
-                <small>Error message</small>
-              </div>
-            </div>
             <div class="form-control">
                 <div class="input_box">
                   <input class="dane" type="text" id="username" placeholder="Nazwa użytkownika" required />

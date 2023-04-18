@@ -20,13 +20,13 @@
         <ul class="nav_items">
           <li class="nav_item">
             <a href="index.php" class="nav_link"><i class="ri-home-2-fill"></i> Strona główna</a>
-            <a href="question.html" class="nav_link"><i class="ri-questionnaire-fill"></i> Zadaj pytanie</a>
+            <a href="question.php" class="nav_link"><i class="ri-questionnaire-fill"></i> Zadaj pytanie</a>
             <a href="about.php" class="nav_link"><i class="ri-file-list-3-fill"></i> O forum</a>
-            <a href="contact.html" class="nav_link"><i class="ri-phone-fill"></i> Kontakt</a>
+            <a href="contact.php" class="nav_link"><i class="ri-phone-fill"></i> Kontakt</a>
           </li>
         </ul>
 
-        <button class="button" id="form-open">Zaloguj</button>
+        <button class="button2" id="form-open">Zaloguj</button>
       </nav>
     </header>
 </body>

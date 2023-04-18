@@ -1,5 +1,5 @@
 footer{
-    background-color: #112f40;
+    background-color: rgba(0, 0, 0, 0.644);
     color: aliceblue;
     position: fixed;
     bottom: 0;
@@ -11,8 +11,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 550px;
-    margin-right: 500px;
+    margin-left: 510px;
+    margin-right: 550px;
+    margin-top: 100px;
 }
 .ri-github-fill{
     font-size: 30px;

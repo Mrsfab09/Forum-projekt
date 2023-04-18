@@ -1,6 +1,4 @@
 const form = document.getElementById('form');
-const name = document.getElementById('name');
-const lastname = document.getElementById('last-name');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
@@ -40,7 +38,7 @@ function checkInputs() {
 	}
 	
 	if(password2Value === '') {
-		setErrorFor(password2, 'Password2 nie może pozostać puste');
+		setErrorFor(password2, 'Pole nie może pozostać puste');
 	} else if(passwordValue !== password2Value) {
 		setErrorFor(password2, 'Hasła się nie zgadzają');
 	} else{

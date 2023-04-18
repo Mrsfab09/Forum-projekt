@@ -18,7 +18,7 @@
    <?php include_once("header.php")?>
    <!-- Login -->
    <?php include_once("form_login.php")?>
-   <br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br>
    
    <!-- O forum -->
     <div class="container">
@@ -30,11 +30,23 @@
         </div>
         <div class="content_box">
             <div class="content active">
-                <h3>O forum</h3>
-                <p>O forum</p>
+                <p class="description">
+                Forum dla informatyków to internetowa platforma, 
+                na której osoby zainteresowane technologią, 
+                programowaniem oraz dziedzinami związanymi z informatyką
+                 mogą dzielić się swoimi doświadczeniami, zadawać pytania 
+                 oraz dyskutować na różne tematy. Użytkownicy mogą 
+                 tworzyć wątki na różne tematy, takie jak: programowanie 
+                 w różnych językach, projektowanie stron internetowych, 
+                 bazy danych, sieci komputerowe, bezpieczeństwo 
+                 informacji czy sprzęt komputerowy. Innymi słowy, 
+                 jest to miejsce, gdzie ludzie z pasją do informatyki 
+                 mogą wymieniać się wiedzą i doświadczeniami, 
+                 aby poszerzać swoje umiejętności i rozwiązywać problemy 
+                 związane z informatyką.
+                </p>
             </div>
-            <div class="content">
-                <h3>Regulamin</h3>
+            <div class="content statute">
                     <ol start="1">
                         <li>Zasady ogólne</li>
                     </ol>
