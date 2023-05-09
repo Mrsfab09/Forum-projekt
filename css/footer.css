@@ -4,7 +4,7 @@ footer{
     position: fixed;
     bottom: 0;
     width: 1100px;
-    height: 50px;
+    height: 70px;
     text-align: center;
     padding: 2px 0 2px 0;
     border-radius: 20px;
@@ -15,11 +15,37 @@ footer{
     margin-right: 550px;
     margin-top: 100px;
 }
-.ri-github-fill{
-    font-size: 30px;
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -150px;
 }
-.profile{
+.socialIcons a{
     text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
     color: white;
-    gap: 10px;
+    transition: 0.5s;
+}
+.footerBottom{
+    background-color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 80px;
+}
+.footerBottom p{
+    color: white;
 }

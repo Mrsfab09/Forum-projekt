@@ -8,6 +8,7 @@
 }
 body{
   background-color: #121a26;
+  min-height: 100vh;
 }
 a {
   text-decoration: none;

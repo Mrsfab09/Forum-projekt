@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <footer>
-        <p>©Copyright 2023 Fabian Skóra</p>
-        <a class="profile" href="https://github.com/Mrsfab09"><i class="ri-github-fill"></i></a>
+    <footer class="footer">
+        <div class="socialIcons">
+            <a href="https://github.com/Mrsfab09">
+                <i class="ri-github-fill"></i>
+            </a>
+            <p class="footerBottom">© Copyright Fabian Skóra 2023</p>
+        </div>
     </footer>
 </body>
 </html>

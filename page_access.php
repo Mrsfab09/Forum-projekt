@@ -3,7 +3,7 @@
 
     if (!isset($_SESSION['user_id'])) {
         // Użytkownik nie jest zalogowany, przekierowanie na stronę logowania
-        header("Location: question.php");
+        header("location: question.php");
         exit;
     }
 ?> -->

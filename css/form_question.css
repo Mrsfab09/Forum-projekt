@@ -39,6 +39,10 @@
     height: 400px;
     border-radius: 5px;
     margin-bottom: 40px;
+    border: none;
+}
+.textarea::placeholder{
+    padding: 10px;
 }
 .submit-quest{
     padding: 6px 24px;

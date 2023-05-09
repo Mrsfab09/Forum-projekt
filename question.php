@@ -26,7 +26,6 @@
         <input class="topic" type="text" placeholder="Temat">
         <textarea class="textarea" name="question" id="" placeholder="Napisz treść pytania"></textarea>
         <button type="submit" class="submit-quest">Zadaj pytanie</button>
-      </section>
-      <script src="js/form.js"></script>
+    </section>
 </body>
 </html>
