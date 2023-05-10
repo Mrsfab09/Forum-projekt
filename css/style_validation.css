@@ -5,12 +5,6 @@
 .form-control.error input {
 	border-color: #e74c3c;
 }
-.form-control .user{
-	visibility: hidden;
-	position: absolute;
-	top: 40px;
-	right: 10px;
-}
 .form-control.success .ri-checkbox-circle-fill {
 	color: #2ecc71;
 	visibility: visible;

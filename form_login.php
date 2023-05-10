@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style_validation.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
@@ -54,39 +55,31 @@
             <h2>Zarejestruj się</h2>
             <div class="form-control">
                 <div class="input_box">
-                  <input class="dane" type="text" id="username" placeholder="Nazwa użytkownika" required />
+                  <input class="dane" type="text" name="username" id="username" placeholder="Nazwa użytkownika" required />
                   <i class="ri-user-line user"></i>
-                  <i class="ri-checkbox-circle-fill"></i>
-                  <i class="ri-error-warning-fill"></i>
                   <small>Error message</small>
                 </div>
               </div>
               <div class="form-control">
                 <div class="input_box">
-                  <input class="dane" type="email" id="email" placeholder="Email" required />
+                  <input class="dane" type="email" name="email" id="email" placeholder="Email" required />
                   <i class="uil uil-envelope-alt email"></i>
-                  <i class="ri-checkbox-circle-fill"></i>
-                  <i class="ri-error-warning-fill"></i>
                   <small>Error message</small>
                 </div>
               </div>
               <div class="form-control">
                 <div class="input_box">
-                  <input class="dane" type="password" id="password" placeholder="Hasło" required />
+                  <input class="dane" type="password" name="password" id="password" placeholder="Hasło" required />
                   <i class="uil uil-lock password"></i>
                   <i class="uil uil-eye-slash pw_hide"></i>
-                  <i class="ri-checkbox-circle-fill"></i>
-                  <i class="ri-error-warning-fill"></i>
                   <small>Error message</small>
                 </div>
               </div>
               <div class="form-control">
                 <div class="input_box">
-                  <input class="dane" type="password" id="password2" placeholder="Powtórz hasło" required />
+                  <input class="dane" type="password" name="password2" id="password2" placeholder="Powtórz hasło" required />
                   <i class="uil uil-lock password"></i>
                   <i class="uil uil-eye-slash pw_hide"></i>
-                  <i class="ri-checkbox-circle-fill"></i>
-                  <i class="ri-error-warning-fill"></i>
                   <small>Error message</small>
                 </div>
               </div>

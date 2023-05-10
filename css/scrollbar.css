@@ -1,5 +1,10 @@
-/* .scrollbox{
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-} */
+::-webkit-scrollbar{
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-button{
+    height: 150px;
+  }

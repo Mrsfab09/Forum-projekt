@@ -14,6 +14,6 @@
     $password=$_POST['password'];
     $password2=$_POST['password2'];
 
-    $dane = mysqli_query($db,"INSERT INTO users VALUES(NULL,$username,$email,$username1,$password");
+    $dane = mysqli_query($db,"INSERT INTO users VALUES(NULL,'$username','$email','$username1','$password'");
     mysqli_close($db);
 ?>
