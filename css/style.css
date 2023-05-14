@@ -8,6 +8,7 @@
 }
 body{
   background-color: #121a26;
+  background-size: cover;
   min-height: 100vh;
 }
 a {
@@ -80,7 +81,7 @@ a {
   height: 100%;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
 }
 .home::before {
   content: "";

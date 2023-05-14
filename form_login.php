@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,15 +24,15 @@
           <i class="uil uil-times form_close"></i>
           <!-- Login From -->
           <div class="form login_form">
-            <form action="db_connect.php" method="POST">
+            <form action="login.php" method="POST">
               <h2>Zaloguj</h2>
 
               <div class="input_box">
-                <input class="dane" type="email" placeholder="Email" required />
+                <input class="dane" type="email" placeholder="Email" name="email" required />
                 <i class="uil uil-envelope-alt email"></i>
               </div>
               <div class="input_box">
-                <input class="dane" type="password" placeholder="Hasło" required />
+                <input class="dane" type="password" placeholder="Hasło" name="haslo" required />
                 <i class="uil uil-lock password"></i>
                 <i class="uil uil-eye-slash pw_hide"></i>
               </div>
@@ -43,7 +44,7 @@
                 </span>
                 <a href="#" class="forgot_pw">Zapomnialeś hasła?</a>
               </div>
-
+              
               <button type="submit" class="button">Zaloguj się</button>
 
               <div class="login_signup">Nie masz konta? <a href="#" id="signup">Zarejestruj się</a></div>
@@ -51,7 +52,7 @@
           </div>
     <!-- Signup From -->
         <div class="form signup_form">
-          <form action="db_connect.php" method="POST" class="form" id="form">
+          <form action="login.php" method="POST" class="form" id="form">
             <h2>Zarejestruj się</h2>
             <div class="form-control">
                 <div class="input_box">
@@ -91,6 +92,7 @@
         </div>
       </div>
     </section>
+    <!-- Walidacja -->
     <script src="js/form.js"></script>
 </body>
 </html>

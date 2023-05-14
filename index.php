@@ -1,3 +1,12 @@
+<!-- Start sesji -->
+<?php
+session_start();
+  // if (!isset($_SESSION['zalogowany']))
+  // {
+  //   header('Location: index.php');
+  //   exit();
+  // }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,13 +21,19 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   </head>
   <body>
+    <?php
+      // echo "Witaj: ".$_SESSION['usersEmail'];
+    ?>
     <!-- Header -->
     <?php include_once("header.php")?>
     <!-- Login -->
     <?php include_once("form_login.php")?>
-    <!-- Containeron question -->
-    <?php include_once("form_login.php")?>
+    <!-- Container question -->
+    <?php include_once("container_question.php")?>
     <!-- Footer -->
     <?php include_once("footer.php")?>
+    <?php
+      if(isset($_SESSION['blad']))	echo $_SESSION['blad'];
+    ?>
   </body>
 </html>

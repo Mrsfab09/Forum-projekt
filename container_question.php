@@ -8,6 +8,32 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h2><i>Pytania i odpowiedzi</i></h2>
+        <div class="list">
+            <h3>Przykladowe pytanie</h3><br>
+            <p>Opis</p>
+        </div>
+        <div class="list">
+            <h3>Przykladowe pytanie</h3><br>
+            <p>Opis</p>
+        </div>
+        <div class="list">
+            <h3>Przykladowe pytanie</h3><br>
+            <p>Opis</p>
+        </div>
+        <div class="list">
+            <h3>Przykladowe pytanie</h3><br>
+            <p>Opis</p>
+        </div>
+        <div class="list">
+            <h3>Przykladowe pytanie</h3><br>
+            <p>Opis</p>
+        </div>
+        <div class="list">
+            <h3>Przykladowe pytanie</h3><br> 
+            <p>Opis</p>
+        </div>
+    </div>
 </body>
 </html>

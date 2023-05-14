@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" type="x-icon" href="img/logo.png">
     <title>Zadaj pytanie</title>
 </head>
 <body>
@@ -23,9 +24,20 @@
     <br><br><br><br><br><br><br><br>
       <!-- Form question -->
     <section class="form_question">
-        <input class="topic" type="text" placeholder="Temat">
-        <textarea class="textarea" name="question" id="" placeholder="Napisz treść pytania"></textarea>
-        <button type="submit" class="submit-quest">Zadaj pytanie</button>
+        <form action="question.php" method="POST">
+          <input class="topic" type="text" placeholder="Temat" name="topic">
+          <textarea class="textarea" name="question" placeholder="Napisz treść pytania"></textarea>
+          
+          <button type="submit" class="submit-quest">Zadaj pytanie</button>
+        </form>
     </section>
+    <?php
+      @$topic=$_POST['topic'];
+      @$question=$_POST['question'];
+      
+      $db=mysqli_connect("localhost","root","","forum");
+      $sql=mysqli_query($db,"INSERT INTO question VALUES(NULL,'$topic','$question')");
+
+    ?>
 </body>
 </html>
