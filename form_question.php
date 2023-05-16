@@ -26,15 +26,20 @@
     <section class="form_question">
         <form action="question.php" method="POST">
           <input class="topic" type="text" placeholder="Temat" name="topic">
-          <textarea class="textarea" name="question" placeholder="Napisz treść pytania"></textarea>
-          
+          <textarea class="textarea" id="textarea" name="question" placeholder="Napisz treść pytania"></textarea>
+          <p id="letterCount">0/800</p>
           <button type="submit" class="submit-quest">Zadaj pytanie</button>
         </form>
     </section>
+    <script src="js/letter_count.js"></script>
     <?php
       @$topic=$_POST['topic'];
       @$question=$_POST['question'];
-      
+      if(isset($_POST['topic']) && isset($_POST['question'])){
+        if(!empty($_POST['topic']) && !empty($_POST['question'])){
+          
+        }
+      }
       $db=mysqli_connect("localhost","root","","forum");
       $sql=mysqli_query($db,"INSERT INTO question VALUES(NULL,'$topic','$question')");
 

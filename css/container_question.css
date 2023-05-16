@@ -1,27 +1,31 @@
 .container{
     position: relative;
     max-width: auto;
-    width: 700px;
+    width: 1100px;
     min-height: 600px;
-    background: #2f363e;
+    background: #2f363e7a;
     border-radius: 30px;
     box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
     10px 10px 70px rgba(0,0,0,0.25),
     inset 5px 5px 10px rgba(0,0,0,0.5),
-    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.116),
     inset -5px -5px 15px rgba(0,0,0,0.75);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 230px;
+    margin-top: 190px;
     padding: 50px;
 }
 .container h2{
     color: dodgerblue;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+.napis{
+    border-bottom: 3px solid #1f81f2;
 }
 h3{
+    margin-top: 9px;
     color: white;
     margin-left: 50px;
     margin-bottom: 20px;
@@ -39,7 +43,7 @@ h3{
     left: 0;
     width: 10px;
     height: 45px;
-    background: #1f83f2;
+    background: #1f81f296;
     border-radius: 22.5px;
     box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
     inset 2px 2px 5px rgba(255,255,255,0.2),
@@ -54,10 +58,7 @@ h3{
     color: #bcbcc0;
     transition: 0.5s;
 }
-.container .list p{
-    color: #95999d;
-}
-.container .list:hover h3,
-.container .list:hover p{
+.container .list:hover h3{
     color: white;
+    z-index: 100;
 }

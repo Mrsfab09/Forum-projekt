@@ -1,9 +1,13 @@
 .form_question{
     width: 1100px;
-    height: 630px;
-    background: #112f40;
+    min-height: 670px;
+    background: #2f363e7a;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.116),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
     padding: 30px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.1);
     border-radius: 20px;
     margin: 0 auto;
 }
@@ -22,7 +26,6 @@
 }
 .topic:hover{
     text-decoration: none;
-    border: none;
     font-size: 20px;
 }
 .topic::placeholder{
@@ -39,9 +42,18 @@
     width: 900px;
     height: 400px;
     border-radius: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     border: none;
     padding: 15px;
+}
+#letterCount{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    margin-right: 80px;
+    margin-bottom: 50px;
 }
 .submit-quest{
     padding: 6px 24px;

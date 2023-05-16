@@ -1,41 +1,48 @@
 <?php
-	session_start();
 
-	require_once "includes/connect.php";
+session_start();
 
-	$polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
-	
-	if ($polaczenie->connect_errno!=0)
-	{
-		echo "Error: ".$polaczenie->connect_errno;
-	}
-	else
-	{
-		$login = $_POST['email'];
-		$haslo = $_POST['haslo'];
+if(!isset($_POST['email']) || !isset($_POST['password']))
+{
+    header('Location: po_logowaniu.php');
+    exit();
+}
 
-		$sql="SELECT * FROM users WHERE usersEmail='$login'AND usersPwd='$haslo'";
+$db = mysqli_connect('localhost','root','','forum');
 
-		if($result=@$polaczenie->query($sql));
-		{
-			$users=$result->num_rows;
-			if($users>0)
-			{
-				$_SESSION['zalogowany'] = true;
+if($db->connect_errno!=0)
+{
+    echo "Error: ".$db->connect_errno;
+}
+else
+{
+    $username = $_POST['email'];
+    $password = $_POST['password'];
 
-				$row=$result->fetch_assoc();
-				$_SESSION['usersEmail']=$rows['usersEmail'];
-				$result->free_result();
-				
-				header("Location: index.php");
-			}else{
-				unset($_SESSION['blad']);
-				$_SESSION['blad'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';
-				header('Location: test.php');
-			}
-		}
-		$polaczenie->close();
-	}
-	
-	
+    $username = htmlentities($username,ENT_QUOTES, "UTF-8");
+
+    if($result = mysqli_query($db, sprintf("SELECT * FROM users WHERE usersEmail='%s'",mysqli_real_escape_string($db,$username))))
+    {
+        $ilu_userow = mysqli_num_rows($result);
+        if($ilu_userow > 0)
+        {
+            $_SESSION['zalogowany'] = true;
+
+            $wiersz = mysqli_fetch_assoc($result);
+            $_SESSION['usersId'] = $wiersz['usersId']; 
+            $_SESSION['usersEmail'] = $wiersz['usersEmail'];
+
+            unset($_SESSION['blad']);
+            mysqli_free_result($result);
+            header('Location: po_logowaniu.php');
+        }
+        else
+        {
+            $_SESSION['blad'] = '<span style="color:red; font-weight:bold;">Nieprawidłowy login lub hasło!</span>';
+            header('Location: index.php');
+        }
+    }
+
+    mysqli_close($db);
+}
 ?>

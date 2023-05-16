@@ -9,31 +9,31 @@
 </head>
 <body>
     <div class="container">
-        <h2><i>Pytania i odpowiedzi</i></h2>
+        <h2 class="napis"><i>Pytania i odpowiedzi</i></h2>
         <div class="list">
-            <h3>Przykladowe pytanie</h3><br>
-            <p>Opis</p>
+            <h3 name="question">Przykladowe pytanie</h3>
         </div>
         <div class="list">
-            <h3>Przykladowe pytanie</h3><br>
-            <p>Opis</p>
+            <h3 name="question">Przykladowe pytanie</h3>
         </div>
         <div class="list">
-            <h3>Przykladowe pytanie</h3><br>
-            <p>Opis</p>
+            <h3 name="question">Przykladowe pytanie</h3>
         </div>
         <div class="list">
-            <h3>Przykladowe pytanie</h3><br>
-            <p>Opis</p>
+            <h3 name="question">Przykladowe pytanie</h3>
         </div>
         <div class="list">
-            <h3>Przykladowe pytanie</h3><br>
-            <p>Opis</p>
+            <h3 name="question">Przykladowe pytanie</h3>
         </div>
-        <div class="list">
-            <h3>Przykladowe pytanie</h3><br> 
-            <p>Opis</p>
+        <div class="list"> 
+            <h3 name="topic">Przykladowe pytanie</h3>
         </div>
     </div>
+    <?php
+         @$topic=$_POST['topic'];
+
+         $db=mysqli_connect("localhost","root","","forum");
+         $sql=mysqli_query($db,"SELECT topic FROM question");
+    ?>
 </body>
 </html>

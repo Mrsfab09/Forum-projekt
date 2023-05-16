@@ -1,4 +1,13 @@
-<?php session_start();?>
+<?php 
+  session_start();
+
+  // if(isset($_SESSION['zalogowany']) && ($_SESSION['zalogowany'] == true))
+  //   {
+  //       header('Location: po_zalogowaniu.php');
+  //       exit();
+  //   }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +41,7 @@
                 <i class="uil uil-envelope-alt email"></i>
               </div>
               <div class="input_box">
-                <input class="dane" type="password" placeholder="Hasło" name="haslo" required />
+                <input class="dane" type="password" placeholder="Hasło" name="password" required />
                 <i class="uil uil-lock password"></i>
                 <i class="uil uil-eye-slash pw_hide"></i>
               </div>

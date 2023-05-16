@@ -15,12 +15,17 @@ ol{
 }
 .container{
     width: 1100px;
-    background: #112f40;
+    background: #2f363e7a;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.116),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
     padding: 30px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.1);
     border-radius: 20px;
     margin: 0 auto;
     margin-bottom: 100px;
+    margin-top: 50px;
 }
 .tab_box{
     width: 100%;

@@ -26,7 +26,7 @@
           </li>
         </ul>
 
-        <button class="button2" id="form-open">Zaloguj</button>
+        <button class="button2"><a href="includes/logout.php">Wyloguj</a></button>
       </nav>
     </header>
 </body>
