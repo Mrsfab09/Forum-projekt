@@ -2,6 +2,7 @@
     width: 1100px;
     min-height: 670px;
     background: #2f363e7a;
+    /* filter: blur(2px); */
     box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
     10px 10px 70px rgba(0,0,0,0.25),
     inset 5px 5px 10px rgba(0,0,0,0.5),
@@ -10,6 +11,26 @@
     padding: 30px;
     border-radius: 20px;
     margin: 0 auto;
+    z-index: 1;
+}
+.log{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -400px;
+    background: #2f363e7a;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.116),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+    padding: 30px;
+    border-radius: 20px;
+    z-index: 2;
 }
 .topic{
     background: #121a26dc;

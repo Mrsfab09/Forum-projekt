@@ -16,9 +16,7 @@
 </head>
 <body>
       <!-- Header -->
-    <?php include_once("header.php")?>
-    <!-- Login -->
-    <?php include_once("form_login.php")?>
+    <?php include_once("header2.php")?>
     <!-- Footer -->
     <?php include_once("footer.php")?>
     <br><br><br><br><br><br><br><br>
@@ -30,9 +28,6 @@
           <p id="letterCount">0/800</p>
           <button type="submit" class="submit-quest">Zadaj pytanie</button>
         </form>
-    </section>
-    <section class="log">
-      <p>Aby zadac pytanie musisz byc zalogowany</p>
     </section>
     <script src="js/letter_count.js"></script>
     <?php

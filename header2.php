@@ -19,9 +19,9 @@
 
         <ul class="nav_items">
           <li class="nav_item">
-            <a href="index.php" class="nav_link"><i class="ri-home-2-fill"></i> Strona główna</a>
-            <a href="form_question.php" class="nav_link"><i class="ri-questionnaire-fill"></i> Zadaj pytanie</a>
-            <a href="about.php" class="nav_link"><i class="ri-file-list-3-fill"></i> O forum</a>
+            <a href="index2.php" class="nav_link"><i class="ri-home-2-fill"></i> Strona główna</a>
+            <a href="form_question2.php" class="nav_link"><i class="ri-questionnaire-fill"></i> Zadaj pytanie</a>
+            <a href="about2.php" class="nav_link"><i class="ri-file-list-3-fill"></i> O forum</a>
             <a href="contact.php" class="nav_link"><i class="ri-phone-fill"></i> Kontakt</a>
           </li>
         </ul>

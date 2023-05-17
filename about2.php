@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- Header -->
-   <?php include_once("header.php")?>
+   <?php include_once("header2.php")?>
    <!-- Login -->
    <?php include_once("form_login.php")?>
    <br><br><br><br><br><br>
@@ -97,7 +97,8 @@
                     <p class="thanks">Dziękuję i życzę miłego korzystania z forum!</p>
             </div>
             <div class="content">
-                <p>Aby zobaczyc dokumentacje należy sie zalogować</p>
+                <h3>Dokumentacja</h3>
+                <p>Dokumentacja</p>
             </div>
         </div>
     </div>

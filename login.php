@@ -4,7 +4,7 @@ session_start();
 
 if(!isset($_POST['email']) || !isset($_POST['password']))
 {
-    header('Location: po_logowaniu.php');
+    header('Location: index2.php');
     exit();
 }
 
@@ -34,7 +34,7 @@ else
 
             unset($_SESSION['blad']);
             mysqli_free_result($result);
-            header('Location: po_logowaniu.php');
+            header('Location: index2.php');
         }
         else
         {

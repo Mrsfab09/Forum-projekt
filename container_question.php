@@ -12,21 +12,33 @@
         <h2 class="napis"><i>Pytania i odpowiedzi</i></h2>
         <div class="list">
             <h3 name="question">Przykladowe pytanie</h3>
+            <i class="ri-question-answer-line"></i>
+            <i class="ri-edit-2-line"></i>
         </div>
         <div class="list">
             <h3 name="question">Przykladowe pytanie</h3>
+            <i class="ri-question-answer-line"></i>
+            <i class="ri-edit-2-line"></i>
         </div>
         <div class="list">
             <h3 name="question">Przykladowe pytanie</h3>
+            <i class="ri-question-answer-line"></i>
+            <i class="ri-edit-2-line"></i>
         </div>
         <div class="list">
             <h3 name="question">Przykladowe pytanie</h3>
+            <i class="ri-question-answer-line"></i>
+            <i class="ri-edit-2-line"></i>
         </div>
         <div class="list">
             <h3 name="question">Przykladowe pytanie</h3>
+            <i class="ri-question-answer-line"></i>
+            <i class="ri-edit-2-line"></i>
         </div>
         <div class="list"> 
             <h3 name="topic">Przykladowe pytanie</h3>
+            <i class="ri-question-answer-line"></i>
+            <i class="ri-edit-2-line"></i>
         </div>
     </div>
     <?php

@@ -10,7 +10,6 @@ body{
   background-color: #121a26;
   background-size: cover;
   min-height: 100vh;
-  /* animation: fadeIn 1s ease-in; */
 }
 a {
   text-decoration: none;
@@ -98,12 +97,4 @@ a {
 .home.show::before {
   opacity: 1;
   pointer-events: auto;
-}
-@keyframes fadeIn {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
 }
