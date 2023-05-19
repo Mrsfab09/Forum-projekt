@@ -10,42 +10,21 @@
 <body>
     <div class="container">
         <h2 class="napis"><i>Pytania i odpowiedzi</i></h2>
-        <div class="list">
-            <h3 name="question">Przykladowe pytanie</h3>
-            <i class="ri-question-answer-line"></i>
-            <i class="ri-edit-2-line"></i>
-        </div>
-        <div class="list">
-            <h3 name="question">Przykladowe pytanie</h3>
-            <i class="ri-question-answer-line"></i>
-            <i class="ri-edit-2-line"></i>
-        </div>
-        <div class="list">
-            <h3 name="question">Przykladowe pytanie</h3>
-            <i class="ri-question-answer-line"></i>
-            <i class="ri-edit-2-line"></i>
-        </div>
-        <div class="list">
-            <h3 name="question">Przykladowe pytanie</h3>
-            <i class="ri-question-answer-line"></i>
-            <i class="ri-edit-2-line"></i>
-        </div>
-        <div class="list">
-            <h3 name="question">Przykladowe pytanie</h3>
-            <i class="ri-question-answer-line"></i>
-            <i class="ri-edit-2-line"></i>
-        </div>
-        <div class="list"> 
-            <h3 name="topic">Przykladowe pytanie</h3>
-            <i class="ri-question-answer-line"></i>
-            <i class="ri-edit-2-line"></i>
-        </div>
-    </div>
-    <?php
-         @$topic=$_POST['topic'];
+        <?php
+            @$topic=$_POST['topic'];
+            // while($wynik=($sql))
+            $db=mysqli_connect("localhost","root","","forum");
+            $sql=mysqli_query($db,"SELECT topic FROM question WHERE id>182");
+                for($i=0;$i<mysqli_num_rows($sql);$i++)
+                {
+                    $rows = mysqli_fetch_array($sql);
+                    echo "<div class='list'>";
+                        echo "<h3 class='t_q' name='question'><a class='row' href='answer_question.php?key=".$rows['topic']."'>{$rows['topic']}</a>"."<br></h3>";
+                    echo "</div>";
 
-         $db=mysqli_connect("localhost","root","","forum");
-         $sql=mysqli_query($db,"SELECT topic FROM question");
-    ?>
+                }
+            mysqli_close($db);
+        ?>
+    </div>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icon_profile.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
@@ -25,9 +26,45 @@
             <a href="contact.php" class="nav_link"><i class="ri-phone-fill"></i> Kontakt</a>
           </li>
         </ul>
-
-        <button class="button2"><a href="includes/logout.php">Wyloguj</a></button>
+        <img class="icon_profile" src="img/default-avatar.png" alt="user_profile" onclick="toggleMenu()">
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img class="icon_profile" src="img/default-avatar.png" alt="user_profile">
+              <h3>Nazwa użytkownika</h3>
+              <!--
+                //TODO:
+                //*Odczytywanie nazwy
+                //*Mozliwosc zmienienia ikony profilu
+                //*Pytania uzytkownika
+              -->
+            </div>
+            <hr>
+            <a class="sub-menu-link" href="#">
+              <i class="ri-user-fill"></i>
+              <p>Edytuj Profil</p>
+              <span> > </span>
+            </a>
+            <a class="sub-menu-link" href="#">
+              <i class="ri-question-mark"></i>
+              <p>Moje pytania</p>
+              <span> > </span>
+            </a>
+            <a class="sub-menu-link" href="includes/logout.php">
+            <i class="ri-logout-box-r-line"></i>
+              <p>Wyloguj się</p>
+              <span> > </span>
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
+    <script>
+      let subMenu=document.getElementById("subMenu");
+
+      function toggleMenu(){
+          subMenu.classList.toggle("open-menu");
+      }
+    </script>
 </body>
 </html>

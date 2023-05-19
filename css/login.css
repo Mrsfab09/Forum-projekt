@@ -5,7 +5,7 @@
    width: 100%;
    top: 50%;
    left: 50%;
-   transform: translate(150%, -100%) scale(1.2);
+   transform: translate(150%, -120%) scale(1.2);
    z-index: 101;
    background: #223243;
    padding: 25px;
@@ -18,7 +18,7 @@
 .home.show .form_container {
   opacity: 1;
   pointer-events: auto;
-  transform: translate(150%, -85%) scale(1);
+  transform: translate(180%, -85%) scale(1);
 }
 .signup_form {
   display: none;
