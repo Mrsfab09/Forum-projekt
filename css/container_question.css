@@ -12,6 +12,7 @@
     inset -5px -5px 15px rgba(0,0,0,0.75);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 150px;
     margin-top: 190px;
     padding: 50px;
 }
@@ -66,16 +67,3 @@
     color: white;
     z-index: 100;
 }
-/* Icons */
-.ri-question-answer-line,
-.ri-edit-2-line{
-    color: white;
-    font-size: 22px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: -700px;
-    margin-left: 700px;
-}
-/* echo "<i class='ri-question-answer-line'></i>";
-echo "<i class='ri-edit-2-line'></i>"; */

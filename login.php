@@ -2,7 +2,7 @@
 
 session_start();
 
-if(!isset($_POST['email']) || !isset($_POST['password']))
+if(!isset($_POST['uName']) || !isset($_POST['password']))
 {
     header('Location: index2.php');
     exit();
@@ -16,12 +16,12 @@ if($db->connect_errno!=0)
 }
 else
 {
-    $username = $_POST['email'];
+    $username = $_POST['uName'];
     $password = $_POST['password'];
 
     $username = htmlentities($username,ENT_QUOTES, "UTF-8");
 
-    if($result = mysqli_query($db, sprintf("SELECT * FROM users WHERE usersEmail='%s'",mysqli_real_escape_string($db,$username))))
+    if($result = mysqli_query($db, sprintf("SELECT * FROM users WHERE usersName='%s'",mysqli_real_escape_string($db,$username))))
     {
         $ilu_userow = mysqli_num_rows($result);
         if($ilu_userow > 0)
@@ -29,8 +29,8 @@ else
             $_SESSION['zalogowany'] = true;
 
             $wiersz = mysqli_fetch_assoc($result);
-            $_SESSION['usersId'] = $wiersz['usersId']; 
-            $_SESSION['usersEmail'] = $wiersz['usersEmail'];
+            $_SESSION['usersId'] = $wiersz['usersId'];
+            $_SESSION['usersName'] = $wiersz['usersName']; 
 
             unset($_SESSION['blad']);
             mysqli_free_result($result);

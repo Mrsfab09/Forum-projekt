@@ -8,7 +8,7 @@ textarea.addEventListener("input", () => {
   charCountDisplay.textContent = charCount + " /800";
 
   // Ustaw tutaj maksymalną liczbę znaków
-  const maxChars = 1000;
+  const maxChars = 800;
   if (charCount > maxChars) {
     textarea.value = text.slice(0, maxChars);
   }

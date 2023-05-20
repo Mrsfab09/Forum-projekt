@@ -1,0 +1,110 @@
+.row{
+    text-decoration: none;
+    color: #fff;
+}
+.topic{
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 150px;
+    display: inline-block;
+    border-bottom: 1px solid dodgerblue;
+}
+/* Answer */
+.container{
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 400px;
+    height: 45px;
+    margin-top: 70px;
+    margin-left: 500px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.odp{
+    width: 800px;
+    height: 45px;
+    border-radius: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+  }
+.container:hover{
+    background-color: #20dbd8bb;
+}
+.textarea{
+    background: #002d4fa6;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    width: 500px;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 350px;
+    margin-left: -130px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 15px;
+    transform: translate(10%, -10%) scale(1.2);
+}
+.textarea:focus{
+    outline: none;
+    border: none;
+}
+#letterCount{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-left: -570px;
+}
+.send-btn{
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    margin-right: -95px;
+}
+.send{
+    width: 100px;
+    height: 30px;
+    background: #20dbd88a;
+    border: none;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.575);
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: -100px;
+    cursor: pointer;
+}
+.send:hover{
+    color: white;
+}
+/* Icons */
+.ri-arrow-left-line{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 350px;
+}
+.ri-question-answer-line{
+    margin-left: 7px;
+}
+.icon{
+    background: #20dbd8;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}

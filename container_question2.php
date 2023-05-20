@@ -19,7 +19,7 @@
                 {
                     $rows = mysqli_fetch_array($sql);
                     echo "<div class='list'>";
-                        echo "<h3 class='t_q' name='question'><a class='row' href=''".$rows['topic']."'>{$rows['topic']}</a>"."<br></h3>";
+                        echo "<h3 class='t_q' name='question'><a class='row' href='answer_question.php?key=".$rows['topic']."'>{$rows['topic']}</a>"."<br></h3>";
                     echo "</div>";
 
                 }

@@ -23,29 +23,34 @@
             <a href="index2.php" class="nav_link"><i class="ri-home-2-fill"></i> Strona główna</a>
             <a href="form_question2.php" class="nav_link"><i class="ri-questionnaire-fill"></i> Zadaj pytanie</a>
             <a href="about2.php" class="nav_link"><i class="ri-file-list-3-fill"></i> O forum</a>
-            <a href="contact.php" class="nav_link"><i class="ri-phone-fill"></i> Kontakt</a>
+            <a href="contact2.php" class="nav_link"><i class="ri-phone-fill"></i> Kontakt</a>
           </li>
         </ul>
         <img class="icon_profile" src="img/default-avatar.png" alt="user_profile" onclick="toggleMenu()">
+              <?php
+                // echo "<h3>".$_SESSION['usersName']."</h3>";
+              ?>
         <div class="sub-menu-wrap" id="subMenu">
           <div class="sub-menu">
             <div class="user-info">
               <img class="icon_profile" src="img/default-avatar.png" alt="user_profile">
-              <h3>Nazwa użytkownika</h3>
               <!--
                 //TODO:
                 //*Odczytywanie nazwy
                 //*Mozliwosc zmienienia ikony profilu
                 //*Pytania uzytkownika
               -->
+              <?php
+                echo "<h3>".$_SESSION['usersName']."</h3>";
+              ?>
             </div>
             <hr>
-            <a class="sub-menu-link" href="#">
+            <a class="sub-menu-link" href="edit-profile.php">
               <i class="ri-user-fill"></i>
               <p>Edytuj Profil</p>
               <span> > </span>
             </a>
-            <a class="sub-menu-link" href="#">
+            <a class="sub-menu-link" href="myquestion.php">
               <i class="ri-question-mark"></i>
               <p>Moje pytania</p>
               <span> > </span>
