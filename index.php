@@ -24,6 +24,8 @@
     <?php include_once("form_login.php")?>
     <!-- Container question -->
     <?php include_once("container_question.php")?>
+    <!-- Cookie -->
+    <?php include_once("cookies.php")?>
     <!-- Footer -->
     <?php include_once("footer.php")?>
   </body>

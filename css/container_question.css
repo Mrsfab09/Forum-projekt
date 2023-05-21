@@ -33,7 +33,10 @@
 }
 .row{
     text-decoration: none;
-    color: #fff;
+    color: #bcbcc0;
+}
+.row:hover{
+    color: white;
 }
 .container .list{
     position: relative;

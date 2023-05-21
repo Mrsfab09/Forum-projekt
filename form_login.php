@@ -15,7 +15,6 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- Script -->
-    <script src="js/validation.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -29,11 +28,11 @@
               <h2>Zaloguj</h2>
 
               <div class="input_box">
-                <input class="dane" type="text" placeholder="Nazwa użytkownika" name="uName" required />
+                <input class="dane" type="text" placeholder="Nazwa użytkownika" name="uName" id="log-username" required />
                 <i class="uil uil-envelope-alt email"></i>
               </div>
               <div class="input_box">
-                <input class="dane" type="password" placeholder="Hasło" name="password" required />
+                <input class="dane" type="password" placeholder="Hasło" name="password" id="log-password" required />
                 <i class="uil uil-lock password"></i>
                 <i class="uil uil-eye-slash pw_hide"></i>
               </div>
@@ -53,28 +52,28 @@
           </div>
     <!-- Signup From -->
         <div class="form signup_form">
-          <form action="login.php" method="POST" class="form" id="form">
+          <form action="signup.php" method="POST" class="form" id="form">
             <h2>Zarejestruj się</h2>
             <div class="form-control">
                 <div class="input_box">
                   <input class="dane" type="text" name="username" id="username" placeholder="Nazwa użytkownika" required />
                   <i class="ri-user-line user"></i>
-                  <small>Error message</small>
+                  <div class="error"></div>
                 </div>
               </div>
               <div class="form-control">
                 <div class="input_box">
                   <input class="dane" type="email" name="email" id="email" placeholder="Email" required />
                   <i class="uil uil-envelope-alt email"></i>
-                  <small>Error message</small>
+                  <div class="error"></div>
                 </div>
               </div>
               <div class="form-control">
                 <div class="input_box">
-                  <input class="dane" type="password" name="password" id="password" placeholder="Hasło" required />
+                  <input class="dane" type="password" name="password1" id="password" placeholder="Hasło" required />
                   <i class="uil uil-lock password"></i>
                   <i class="uil uil-eye-slash pw_hide"></i>
-                  <small>Error message</small>
+                  <div class="error"></div>
                 </div>
               </div>
               <div class="form-control">
@@ -82,7 +81,7 @@
                   <input class="dane" type="password" name="password2" id="password2" placeholder="Powtórz hasło" required />
                   <i class="uil uil-lock password"></i>
                   <i class="uil uil-eye-slash pw_hide"></i>
-                  <small>Error message</small>
+                  <div class="error"></div>
                 </div>
               </div>
 
@@ -93,7 +92,7 @@
         </div>
       </div>
     </section>
-    <!-- Walidacja -->
+    <script defer src="js/validation.js"></script>
     <script src="js/form.js"></script>
 </body>
 </html>

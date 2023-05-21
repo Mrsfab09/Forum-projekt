@@ -100,8 +100,14 @@
                     <p class="thanks">Dziękuję i życzę miłego korzystania z forum!</p>
             </div>
             <div class="content">
-                <h3>Dokumentacja</h3>
-                <p>Dokumentacja</p>
+                <p class="download"><i class="ri-database-2-fill"></i><a class ="database" href=""> Pobierz baze danych</a></p>
+                <p class="download"><i class="ri-file-code-fill"></i><a class ="repo" href=""> Pobierz repozytorium projektu</a></p>
+                <p>
+                    <span class="forum">Forum Informatyka</span> to aplikacja webowa na ktorej mozna zadawać pytania 
+                    dotyczące dziedziny informatyki i całego IT. <br><br>Po zalogowaniu sie do aplikacji 
+                    użytkownik może zadać pytania jak i również odpowiedzieć na pytania innych użytkowników.
+                    Użytkownik może zmienić ikonę swojego profilu i zobaczyć zadane przez siebie pytania.
+                </p>
             </div>
         </div>
     </div>

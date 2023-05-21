@@ -7,6 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/icon_profile.css">
+    <link rel="shortcut icon" type="x-icon" href="img/logo.png">
     <!-- Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
@@ -71,5 +72,6 @@
           subMenu.classList.toggle("open-menu");
       }
     </script>
+    <!-- <script src="js/imageProfile.js"></script> -->
 </body>
 </html>

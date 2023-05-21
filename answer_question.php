@@ -16,13 +16,17 @@
     <a href="index2.php"><i class="ri-arrow-left-line"></i></a>
     <?php
         @$topic=$_POST['topic'];
+        @$question=$_POST['question'];
         $code=$_GET['key'];
         // while($wynik=($sql))
         $db=mysqli_connect("localhost","root","","forum");
-        $sql=mysqli_query($db,"SELECT topic FROM question");
+        $sql=mysqli_query($db,"SELECT * FROM question");
             $rows = mysqli_fetch_array($sql);
             echo "<div class='topic'>";
                 echo "<h2 class='t_q' name='question'><a class='row' href='answer_question.php?key=".$rows['topic']."'>{$code}</a>"."<br></h2>";
+            echo "</div>";
+            echo "<div class=''>";
+                echo "<p class='row' href='answer_question.php?key=".$rows['topic']."'>{$rows['question']}</p>";
             echo "</div>";
 
         mysqli_close($db);

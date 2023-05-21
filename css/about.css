@@ -90,3 +90,35 @@ ol{
 .statute{
     line-height: 30px;
 }
+/* About 2 */
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.ri-database-2-fill,
+.ri-file-code-fill{
+    text-decoration: none;
+    font-size: 30px;
+}
+.ri-database-2-fill,
+.database{ 
+    text-decoration: none;
+    color: orange;
+    margin-bottom: 20px;
+}
+.ri-file-code-fill,
+.repo{
+    text-decoration: none;
+    color: greenyellow;
+    margin-bottom: 50px;
+}
+.app{
+    color: red;
+}
+.forum{
+    font-size: 20px;
+    margin-right: 5px;
+    color: dodgerblue;
+}

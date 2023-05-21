@@ -5,59 +5,71 @@ const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
 form.addEventListener('submit', e => {
-	e.preventDefault();
-	
-	checkInputs();
+    e.preventDefault();
+
+    validateInputs();
 });
 
-function checkInputs() {
-	// trim to remove the whitespaces
-	const usernameValue = username.value.trim();
-	const emailValue = email.value.trim();
-	const passwordValue = password.value.trim();
-	const password2Value = password2.value.trim();
-	
-	if(usernameValue === '') {
-		setErrorFor(username, 'Nazwa użytkownika nie może pozostać pusta');
-	} else {
-		setSuccessFor(username);
-	}
-	
-	if(emailValue === '') {
-		setErrorFor(email, 'Email nie może pozostać pusty');
-	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'Nieprawidłowy adres e-mail');
-	} else {
-		setSuccessFor(email);
-	}
-	
-	if(passwordValue === '') {
-		setErrorFor(password, 'Hasło nie może pozostać puste');
-	} else {
-		setSuccessFor(password);
-	}
-	
-	if(password2Value === '') {
-		setErrorFor(password2, 'Pole nie może pozostać puste');
-	} else if(passwordValue !== password2Value) {
-		setErrorFor(password2, 'Hasła się nie zgadzają');
-	} else{
-		setSuccessFor(password2);
-	}
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
 }
 
-function setErrorFor(input, message) {
-	const formControl = input.parentElement;
-	const small = formControl.querySelector('small');
-	formControl.className = 'form-control error';
-	small.innerText = message;
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
+
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+};
+
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
 }
 
-function setSuccessFor(input) {
-	const formControl = input.parentElement;
-	formControl.className = 'form-control success';
-}
-	
-function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-}
+const validateInputs = () => {
+    const usernameValue = username.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const password2Value = password2.value.trim();
+
+    if(usernameValue === '') {
+        setError(username, 'Nazwa użytkownika jest wymagana');
+    }else if(usernameValue.length < 4 ){
+		setError(username, 'Nazwa użytkownika musi mieć co najmniej 4 znaki')
+	}
+	else {
+        setSuccess(username);
+    }
+
+    if(emailValue === '') {
+        setError(email, 'Email jest wymagany');
+    } else if (!isValidEmail(emailValue)) {
+        setError(email, 'Podaj prawidłowy adres e-mail');
+    } else {
+        setSuccess(email);
+    }
+
+    if(passwordValue === '') {
+        setError(password, 'Hasło jest wymagane');
+    } else if (passwordValue.length < 8 ) {
+        setError(password, 'Hasło musi mieć co najmniej 8 znaków')
+    } else {
+        setSuccess(password);
+    }
+
+    if(password2Value === '') {
+        setError(password2, 'Potwierdź hasło');
+    } else if (password2Value !== passwordValue) {
+        setError(password2, "Hasła nie pasują do siebie");
+    } else {
+        setSuccess(password2);
+    }
+
+};

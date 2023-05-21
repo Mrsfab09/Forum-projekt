@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <footer class="footer content">
+    <footer class="footer">
         <div class="socialIcons">
             <a href="https://github.com/Mrsfab09">
                 <i class="ri-github-fill"></i>
             </a>
-            <p class="footerBottom">© Copyright Wszelkie prawa zastrzeżone 2023</p>
+            <p class="footerBottom">© Forum Informatyka Wszelkie prawa zastrzeżone 2023</p>
         </div>
     </footer>
 </body>
