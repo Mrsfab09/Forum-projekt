@@ -1,3 +1,6 @@
+<?php
+    @session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +20,7 @@
 <body>
     <header class="header">
       <nav class="nav">
-        <a href="#" class="nav_logo"><img class="logo" src="img/logo.png" alt=""></a>
+        <a href="#" class="nav_logo"><img class="logo" src="img/logo2.png" alt=""></a>
 
         <ul class="nav_items">
           <li class="nav_item">

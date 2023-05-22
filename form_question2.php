@@ -42,10 +42,11 @@
     <?php
       @$topic=$_POST['topic'];
       @$question=$_POST['question'];
+      $id=$_SESSION['usersId'];
       if(isset($_POST['topic']) && isset($_POST['question'])){
         if(!empty($_POST['topic']) && !empty($_POST['question'])){
           @$db=mysqli_connect("localhost","root","","forum");
-          @$sql=mysqli_query($db,"INSERT INTO question VALUES(NULL,'$topic','$question')");
+          @$sql=mysqli_query($db,"INSERT INTO question VALUES(NULL,'$topic','$question','$id')");
           
           mysqli_close($db);
         }

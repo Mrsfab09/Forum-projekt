@@ -11,7 +11,7 @@
     <div class="popup" id="popup">
         <img src="img/wrong-icon.png" alt="wrong">
         <h2>Błąd!</h2>
-        <p>Nie możesz zadać pytania jeśli nie jesteś zalogowany</p>
+        <p>Nie jesteś zalogowany, zaloguj się</p>
         <button class="wrong" type="button" onclick="closePopup()">OK</button>
     </div>
 </body>

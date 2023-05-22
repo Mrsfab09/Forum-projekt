@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-user{
+    width: 400px;
+    background-color: #03437e;
+    padding: 40px;
+    margin-top: 300px;
+    border-radius: 15px;
+    text-align: center;
+}
+.question-user h3{
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.question-user span{
+    font-size: 18px;
+    color: white;
+    float: left;
+}
+.question-user a{
+    text-decoration: none;
+    color: white;
+}

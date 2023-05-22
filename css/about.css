@@ -122,3 +122,16 @@ ol{
     margin-right: 5px;
     color: dodgerblue;
 }
+.btn-dok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: dodgerblue;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}

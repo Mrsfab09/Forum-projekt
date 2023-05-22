@@ -7,6 +7,7 @@
     <!--CSS -->
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/popup.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
@@ -97,11 +98,15 @@
                     <p class="thanks">Dziękuję i życzę miłego korzystania z forum!</p>
             </div>
             <div class="content">
-                <p>Aby zobaczyc dokumentacje należy sie zalogować</p>
+                <button  class="btn-dok" onclick="openPopup()">Zobacz<i class="ri-arrow-down-s-fill"></i></button>
             </div>
         </div>
     </div>
     <?php include_once("footer.php")?>
+
+    <?php include_once("popup-wrong.php")?>
+    <script src="js/popup.js"></script>
+
     <script>
         const tabs=document.querySelectorAll('.tab_btn');
         const all_content=document.querySelectorAll('.content');

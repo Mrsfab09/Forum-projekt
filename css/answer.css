@@ -87,6 +87,9 @@
 .send:hover{
     color: white;
 }
+.odpowiedz{
+    background-color: white;
+}
 /* Icons */
 .ri-arrow-left-line{
     color: white;

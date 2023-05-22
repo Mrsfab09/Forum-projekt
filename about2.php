@@ -104,9 +104,12 @@
                 <p class="download"><i class="ri-file-code-fill"></i><a class ="repo" href=""> Pobierz repozytorium projektu</a></p>
                 <p>
                     <span class="forum">Forum Informatyka</span> to aplikacja webowa na ktorej mozna zadawać pytania 
-                    dotyczące dziedziny informatyki i całego IT. <br><br>Po zalogowaniu sie do aplikacji 
-                    użytkownik może zadać pytania jak i również odpowiedzieć na pytania innych użytkowników.
-                    Użytkownik może zmienić ikonę swojego profilu i zobaczyć zadane przez siebie pytania.
+                    dotyczące dziedziny informatyki i całego IT. <br><br>
+                    Przed zalogowaniem sie do aplikacji użytkownik:<br>
+                     - nie może zadawać pytań ani odpowiadac na pytania innych użytkowników.<br><br>
+                    Po zalogowaniu sie do aplikacji użytkownik:<br>
+                     - może zadać pytania jak i również odpowiedzieć na pytania innych użytkowników.
+                     - może zmienić ikonę swojego profilu i zobaczyć zadane przez siebie pytania.
                 </p>
             </div>
         </div>
