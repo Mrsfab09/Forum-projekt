@@ -85,7 +85,7 @@
                 </div>
               </div>
 
-            <button type="submit" class="button">Załóż konto</button>
+            <input type="submit" class="button" value="Załóż konto">
 
             <div class="login_signup">Masz juz konto? <a href="#" id="login">Zaloguj się</a></div>
           </form>

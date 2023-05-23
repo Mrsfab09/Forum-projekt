@@ -100,15 +100,15 @@
                     <p class="thanks">Dziękuję i życzę miłego korzystania z forum!</p>
             </div>
             <div class="content">
-                <p class="download"><i class="ri-database-2-fill"></i><a class ="database" href=""> Pobierz baze danych</a></p>
-                <p class="download"><i class="ri-file-code-fill"></i><a class ="repo" href=""> Pobierz repozytorium projektu</a></p>
+                <p class="download"><i class="ri-database-2-fill"></i><a class ="database" href="forum.sql" download="forum.sql"> Pobierz baze danych</a></p>
+                <p class="download"><i class="ri-file-code-fill"></i><a class ="repo" href="Forum-projekt.zip" download="Forum-projekt.zip"> Pobierz repozytorium projektu</a></p>
                 <p>
                     <span class="forum">Forum Informatyka</span> to aplikacja webowa na ktorej mozna zadawać pytania 
                     dotyczące dziedziny informatyki i całego IT. <br><br>
                     Przed zalogowaniem sie do aplikacji użytkownik:<br>
                      - nie może zadawać pytań ani odpowiadac na pytania innych użytkowników.<br><br>
                     Po zalogowaniu sie do aplikacji użytkownik:<br>
-                     - może zadać pytania jak i również odpowiedzieć na pytania innych użytkowników.
+                     - może zadać pytania ale nie moze niestety na nie odpowiadac.
                      - może zmienić ikonę swojego profilu i zobaczyć zadane przez siebie pytania.
                 </p>
             </div>

@@ -1,14 +1,28 @@
+.rows{
+    display: flex;
+    align-items: center;
+}
+.rows p{
+    text-decoration: none;
+    margin-left: 480px;
+    margin-right: auto;
+    color: #fff;
+}
 .row{
     text-decoration: none;
+    margin-left: 100px;
+    margin-right: auto;
     color: #fff;
 }
 .topic{
     display: flex;
     align-items: center;
     margin-top: 200px;
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
     display: inline-block;
-    border-bottom: 1px solid dodgerblue;
+    /* border-bottom: 1px solid dodgerblue; */
+    margin-bottom: 30px;
 }
 /* Answer */
 .container{
@@ -17,10 +31,9 @@
     width: 400px;
     height: 45px;
     margin-top: 70px;
-    margin-left: 500px;
+    margin-left: 380px;
     display: flex;
     align-items: center;
-    cursor: pointer;
 }
 .odp{
     width: 800px;
@@ -42,7 +55,7 @@
 .textarea{
     background: #002d4fa6;
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     display: flex;
     width: 500px;
     height: 100px;

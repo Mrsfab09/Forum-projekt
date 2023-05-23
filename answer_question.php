@@ -18,17 +18,22 @@
     <?php
         @$topic=$_POST['topic'];
         @$question=$_POST['question'];
+        @$question=$_POST['question2'];
         $code=$_GET['key'];
         $db=mysqli_connect("localhost","root","","forum");
         $sql=mysqli_query($db,"SELECT * FROM question");
-            $rows = mysqli_fetch_array($sql);
+        while($rows = mysqli_fetch_array($sql)){
+
+        if($rows['topic']==$code){
             echo "<div class='topic'>";
-                echo "<h2 class='t_q' name='question'><a class='row' href='answer_question.php?key=".$rows['topic']."'>{$code}</a>"."<br></h2>";
-            echo "</div>";
-            echo "<div class=''>";
-                echo "<p class='row' href='answer_question.php?key=".$rows['topic']."'>{$rows['question']}</p>";
+                echo "<h2 name='question'><a class='row' href='answer_question.php?key=".$rows['topic']."'>{$code}</a>"."<br></h2>";
             echo "</div>";
 
+            echo "<div class='rows'>";
+                echo "<p>{$rows['question']}</p>";
+            echo "</div>";
+        }
+    }
         mysqli_close($db);
     ?>
     <div class="container">
@@ -49,8 +54,12 @@
         $db=mysqli_connect("localhost","root","","forum");
         @$text=$_POST['textarea'];
         @$id=$_SESSION['userId'];
-        $sql=mysqli_query($db,"INSERT INTO answers VALUES(NULL,'pytanie','$text','$id')");
-
+        if(isset($_POST['textarea'])){
+            if(!empty($_POST['textarea'])){
+                $sql=mysqli_query($db,"INSERT INTO answers VALUES(NULL,'pytanie','$text','$id')");
+            }
+        
+        }
         // if($result = mysqli_query($db,"SELECT * FROM answers GROUP BY answersId DESC")){
         //     for($i=0;$i<mysqli_num_rows($result);$i++){ 
         //     $dane = mysqli_fetch_array($result);
